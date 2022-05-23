@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 /************************ Banner ****************************/
 
-.home_container{
+.home_container {
     width: 100vw;
     height: 100vh;
     background: #1F2631;
@@ -18,13 +18,13 @@
     align-items: center;
 }
 
-.home_main-text{
-    display: flex; 
+.home_main-text {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home_hackCBS>h1{
+.home_hackCBS>h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -33,18 +33,18 @@
     color: #F8F5FF;
 }
 
-.home_hackCBS p{
+.home_hackCBS p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 37px;
     line-height: 43px;
     color: #F8F5FF;
-    margin-top:-35px;
+    margin-top: -35px;
     padding-left: 0.8rem;
 }
 
-.home_main-text>h1{
+.home_main-text>h1 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
@@ -58,7 +58,7 @@
     text-fill-color: transparent;
 }
 
-.home_date-container p{
+.home_date-container p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -67,7 +67,7 @@
     color: #F8F5FF;
 }
 
-.home_button-container{
+.home_button-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -75,7 +75,7 @@
     width: 40%;
 }
 
-.button_register{
+.button_register {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,10 +87,10 @@
     color: #FFFFFF;
     background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
     border-radius: 15px;
-    border: none !important;    
+    border: none !important;
 }
 
-.button_discord{
+.button_discord {
     /* display: flex; */
     box-sizing: border-box;
     justify-content: center;
@@ -105,4 +105,63 @@
     border-radius: 15px;
     border: 4px solid;
     /* border-image-source: linear-gradient(92.3deg, #FC5FD9 0%, #8D5DF5 40.52%); */
+}
+
+.cards {
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, 1fr); */
+    justify-content: center;
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.card {
+    width: 60%;
+    height: 85%;
+    background-color: rgba(248, 245, 255, 1);
+    border-radius: 20px;
+    margin: 40px;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    box-shadow: 2px 2px 20px black;
+}
+
+.card-img img {
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 23%;
+    width: 190px;
+    height: 190px;
+}
+
+.card-info {
+    text-align: center;
+    padding: 4px;
+    font-size: large;
+}
+
+.card_title {
+    margin: 10px;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
 }
