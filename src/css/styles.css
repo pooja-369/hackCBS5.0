@@ -107,6 +107,70 @@
     /* border-image-source: linear-gradient(92.3deg, #FC5FD9 0%, #8D5DF5 40.52%); */
 }
 
+
+/************************ about us  ****************************/
+
+.section {
+    width: 100%;
+    /* position: sticky; */
+    /* margin-bottom: 25%; */
+}
+
+.container {
+    /* width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+    align-items: center; */
+    width: 80%;
+    display: block;
+    margin: 8px 200px;
+    padding: 105px 0px;
+    align-items: center;
+    height: 79vh;
+}
+
+.container .title {
+    width: 100%;
+    /* text-align: center; */
+    margin-bottom: 50px;
+}
+
+.container .title h1 {
+    font-size: 35px;
+    color: #23231e;
+}
+
+.content {
+    float: left;
+    width: 50%;
+}
+
+.para1 .para2 .para3 {
+    margin-bottom: 10%;
+}
+
+.img-section {
+    float: right;
+    width: 40%;
+}
+
+.img-section img {
+    width: 100%;
+    /* height: auto; */
+    height: 50vh;
+    border-radius: 50px;
+}
+
+.content .article p {
+    font-size: 23px;
+    line-height: 1.5;
+    margin-bottom: 21px;
+}
+
+
+/************************ cards ****************************/
+
 .cards {
     margin: 80px;
     display: grid;
