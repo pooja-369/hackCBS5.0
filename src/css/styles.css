@@ -48,7 +48,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
-    font-size: 295px;
+    font-size: 260px;
     line-height: 346px;
     padding-left: 2rem;
     background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
@@ -164,4 +164,163 @@ button:hover {
     color: white;
     transition: .5s;
     cursor: pointer;
+}
+
+/* ***************** GLIMPSES ****************** */
+.side-decorator{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    justify-content: center;
+}
+
+.glimpses{
+    background-color:#1F2631;
+    padding-top: 15vh;
+    padding-bottom: 20vh;  /* Will remove later */
+}
+
+#decorator-headings{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+}
+
+#purple-decorator > *{
+    background: #B492FF;
+    border-radius: 0px 50px 50px 0px;
+}
+
+#rect-1{
+    width: 84px;
+    height: 15.92px;
+}
+
+#rect-2{
+    width: 44.4px;
+    height: 15.92px;
+}
+
+#rect-3{
+    width: 64.13px;
+    height: 15.92px;
+}
+
+#glimpse-heading > h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    /* line-height: 76px; */
+    color: #F8F5FF;
+}
+
+#glimpse-carousel{
+    padding-top: 10vh;
+}
+
+#glimpse-carousel img{
+    /* align-items: center; */
+    display:block;
+    margin:auto;
+    width: 40vw;
+    height: 50vh;
+}
+
+/* ***************** WORKSHOPS ****************** */
+.workshop{
+    background-color:#1F2631;
+    padding-top: 15vh;
+}
+
+.workshop-card-container{
+    padding: 15vh 5vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    row-gap: 4%;
+    column-gap: 2%;
+}
+
+.workshop-card{
+    width: 375px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(159.8deg, #F8F5FF 0%, #d6c6f8 88.57%);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+
+}
+
+#workshop-card-title > h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 0;
+    color: #1F2631;
+}
+
+#workshop-card-text > h6{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 20px;
+    color: #5F5B65;
+}
+
+#workshop-card-text{
+    margin-left: -20%;
+}
+
+#workshop-timing{
+    display: flex;
+    flex-direction: column;
+    margin-left: -65%;
+}
+
+#workshop-timing span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #5F5B65;
+}
+
+.workshop-card > a{
+    margin-top:auto
+}
+
+#workshop-card-button{
+    background: #f74ca4;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#workshop-card-button > span{ 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #F3EDFF;
+}
+
+#workshop-card-button:hover{
+    background-color: #ee3192;
+    text-decoration: none;
 }
