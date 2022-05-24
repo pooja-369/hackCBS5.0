@@ -275,21 +275,72 @@ button:hover {
     font-style: normal;
     font-weight: 700;
     font-size: 65px;
-    /* line-height: 76px; */
     color: #F8F5FF;
 }
 
-#glimpse-carousel{
+#glimpse-slider{
     padding-top: 10vh;
+    display: flex;
+    gap: 20vw;
+    overflow: hidden;
 }
 
-#glimpse-carousel img{
-    /* align-items: center; */
+.slide-first{
+    margin-left: -46.5%;
+}
+
+#glimpse-slider img{
     display:block;
     margin:auto;
-    width: 40vw;
-    height: 50vh;
+    width: 50vw;
+    height: 60vh;
 }
+
+#glimpse-slider-button input{
+    display: none;
+}
+
+.glimpse-slide{
+    transition:2s;
+}
+
+#glimpse-navigation{
+    padding-top: 15vh;
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+}
+
+.glimpse-nav-btn{
+    background-color: rgb(26, 24, 44);
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.glimpse-nav-btn:hover{
+    background-color: #F8F5FF;
+}
+
+/* !!!!!!!!!!NOT WORKING !!!!!!!!!! */
+#slider-1:checked ~ .slide-first{
+    margin-left: -40%;
+    display: none;
+}
+
+#slider-2:checked ~ .slide-first{
+    margin-left: -20%;
+}
+
+#slider-3:checked ~ .slide-first{
+    margin-left: -40%;
+}
+
+#slider-4:checked ~ .slide-first{
+    margin-left: -60%;
+}
+/* !!!!!!!!!!NOT WORKING !!!!!!!!!! */
 
 /* ***************** WORKSHOPS ****************** */
 .workshop{
