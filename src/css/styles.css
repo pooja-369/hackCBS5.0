@@ -83,10 +83,10 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    padding: 0.5rem 4rem;
+    padding: 1.1rem 4rem;
     color: #FFFFFF;
     background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
-    border-radius: 15px;
+    border-radius: 5px;
     border: none !important;
 }
 
@@ -104,7 +104,8 @@
     background: #1F2631;
     border-radius: 15px;
     border: 4px solid;
-    /* border-image-source: linear-gradient(92.3deg, #FC5FD9 0%, #8D5DF5 40.52%); */
+    border-image-slice: 1;
+    border-image-source: linear-gradient(92.3deg, #FC5FD9 0%, #8D5DF5 40.52%);
 }
 
 
