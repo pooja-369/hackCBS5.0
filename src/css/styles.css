@@ -83,10 +83,10 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    padding: 0.5rem 4rem;
+    padding: 1.1rem 4rem;
     color: #FFFFFF;
     background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
-    border-radius: 15px;
+    border-radius: 5px;
     border: none !important;
 }
 
@@ -104,7 +104,8 @@
     background: #1F2631;
     border-radius: 15px;
     border: 4px solid;
-    /* border-image-source: linear-gradient(92.3deg, #FC5FD9 0%, #8D5DF5 40.52%); */
+    border-image-slice: 1;
+    border-image-source: linear-gradient(92.3deg, #FC5FD9 0%, #8D5DF5 40.52%);
 }
 
 
@@ -112,22 +113,28 @@
 
 .section {
     width: 100%;
+    height: 130vh;
     /* position: sticky; */
-    /* margin-bottom: 25%; */
+    margin-top: 35px;
+    margin-bottom: 42px;
 }
 
-.container {
-    /* width: 80%;
-    display: block;
-    margin: 0px auto;
-    padding: 50px 0px;
-    align-items: center; */
+#About-heading>h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    /* line-height: 76px; */
+    color: #131314;
+}
+
+.article {
     width: 80%;
     display: block;
-    margin: 8px 200px;
-    padding: 105px 0px;
-    align-items: center;
-    height: 79vh;
+    /* margin: -29px 0px 0px; */
+    padding: 29px 0px;
+    margin-left: 189px;
+    /* height: 79vh; */
 }
 
 .container .title {
@@ -143,8 +150,9 @@
 
 .content {
     float: left;
-    width: 60%;
-    padding-right: 20PX;
+    width: 50%;
+    padding-right: 20px;
+    padding-top: 40px;
 }
 
 .para1 .para2 .para3 {
@@ -153,14 +161,14 @@
 
 .img-section {
     float: right;
-    width: 40%;
+    width: 48%;
 }
 
 .img-section img {
     width: 100%;
     /* height: auto; */
-    height: 50vh;
-    border-radius: 50px;
+    height: 110vh;
+    /* border-radius: 52% 34% 28% 28%; */
 }
 
 .content .article p {
@@ -169,8 +177,25 @@
     margin-bottom: 21px;
 }
 
+.abc {
+    /* width: 30%; */
+}
+
+.sq-1 {
+    float: left;
+    width: 10%;
+}
+
+.sq-2 {
+    float: right;
+    width: 46%;
+}
+
 
 /************************ cards ****************************/
+
+
+/* .card-heading {} */
 
 .cards {
     margin: 80px;
@@ -183,7 +208,7 @@
 }
 
 .card {
-    width: 60%;
+    width: 67%;
     height: 85%;
     background-color: rgba(248, 245, 255, 1);
     border-radius: 20px;
@@ -211,24 +236,12 @@
     font-size: large;
 }
 
+.card-info img {
+    width: 30%;
+}
+
 .card_title {
     margin: 10px;
-}
-
-button {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #fff;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-    transition: .5s;
-    cursor: pointer;
 }
 
 
@@ -282,40 +295,40 @@ button:hover {
     color: #F8F5FF;
 }
 
-#glimpse-slider{
+#glimpse-slider {
     padding-top: 10vh;
     display: flex;
     gap: 20vw;
     overflow: hidden;
 }
 
-.slide-first{
+.slide-first {
     margin-left: -46.5%;
 }
 
-#glimpse-slider img{
-    display:block;
-    margin:auto;
+#glimpse-slider img {
+    display: block;
+    margin: auto;
     width: 50vw;
     height: 60vh;
 }
 
-#glimpse-slider-button input{
+#glimpse-slider-button input {
     display: none;
 }
 
-.glimpse-slide{
-    transition:2s;
+.glimpse-slide {
+    transition: 2s;
 }
 
-#glimpse-navigation{
+#glimpse-navigation {
     padding-top: 15vh;
     display: flex;
     column-gap: 5px;
     justify-content: center;
 }
 
-.glimpse-nav-btn{
+.glimpse-nav-btn {
     background-color: rgb(26, 24, 44);
     padding: 7px;
     border-radius: 10px;
@@ -323,28 +336,33 @@ button:hover {
     transition: 1s;
 }
 
-.glimpse-nav-btn:hover{
+.glimpse-nav-btn:hover {
     background-color: #F8F5FF;
 }
 
+
 /* !!!!!!!!!!NOT WORKING !!!!!!!!!! */
-#slider-1:checked ~ .slide-first{
+
+#slider-1:checked~.slide-first {
     margin-left: -40%;
     display: none;
 }
 
-#slider-2:checked ~ .slide-first{
+#slider-2:checked~.slide-first {
     margin-left: -20%;
 }
 
-#slider-3:checked ~ .slide-first{
+#slider-3:checked~.slide-first {
     margin-left: -40%;
 }
 
-#slider-4:checked ~ .slide-first{
+#slider-4:checked~.slide-first {
     margin-left: -60%;
 }
+
+
 /* !!!!!!!!!!NOT WORKING !!!!!!!!!! */
+
 
 /* ***************** WORKSHOPS ****************** */
 
