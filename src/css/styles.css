@@ -237,7 +237,7 @@ button:hover {
 .side-decorator {
     display: flex;
     flex-direction: column;
-    row-gap: 4px;
+    row-gap: 1vh;
     justify-content: center;
 }
 
@@ -260,25 +260,25 @@ button:hover {
 }
 
 #rect-1 {
-    width: 84px;
-    height: 15.92px;
+    width: 7vw;
+    height: 1.5vw;
 }
 
 #rect-2 {
-    width: 44.4px;
-    height: 15.92px;
+    width: 5vw;
+    height: 1.5vw;
 }
 
 #rect-3 {
-    width: 64.13px;
-    height: 15.92px;
+    width: 6vw;
+    height: 1.5vw;
 }
 
 #glimpse-heading>h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;   
-    font-size: 65px;
+    font-size: 6vw;
     color: #F8F5FF;
 }
 
@@ -362,8 +362,8 @@ button:hover {
 }
 
 .workshop-card {
-    width: 375px;
-    height: 500px;
+    width: 27vw;
+    height: 72vh;
     border-radius: 20px;
     box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
     background: linear-gradient(159.8deg, #F8F5FF 0%, #d6c6f8 88.57%);
@@ -415,6 +415,11 @@ button:hover {
 
 .workshop-card>a {
     margin-top: auto
+}
+
+#workshop-card-img img{
+    height: 25vh;
+    width:  25vw;
 }
 
 #workshop-card-button {
