@@ -167,8 +167,7 @@
 .img-section img {
     width: 100%;
     /* height: auto; */
-    height: 110vh;
-    /* border-radius: 52% 34% 28% 28%; */
+    height: 100vh;
 }
 
 .content .article p {
@@ -290,7 +289,7 @@
 #glimpse-heading>h2 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;   
+    font-weight: 700;
     font-size: 6vw;
     color: #F8F5FF;
 }
@@ -435,9 +434,9 @@
     margin-top: auto
 }
 
-#workshop-card-img img{
+#workshop-card-img img {
     height: 25vh;
-    width:  25vw;
+    width: 25vw;
 }
 
 #workshop-card-button {
