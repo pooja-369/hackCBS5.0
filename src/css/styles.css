@@ -558,22 +558,34 @@
     .content .article p {
         font-size: 18px;
     }
+    .img-section img {
+        height: 85vh;
+    }
 }
 
 @media screen and (max-width:1341px) {
     .content .article p {
         font-size: 16px;
+        padding-right: 10px;
+        margin-right: 10px;
     }
     .cards {
         position: static;
         padding-top: 40px;
         grid-gap: 0px;
     }
+    .img-section img {
+        height: 80vh;
+    }
 }
 
 @media screen and (max-width:1227px) {
+    .home_hackCBS>h1 {
+        font-size: 150px;
+    }
     .article {
         width: 95%;
+        margin-right: 15px;
     }
     .img-section {
         width: 42%;
@@ -581,11 +593,37 @@
     .img-section img {
         height: 74vh;
     }
+    .cards {
+        margin-left: 40px;
+        position: static;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-gap: 10px;
+    }
 }
 
-@media screen and(max-width:1147px) {
+@media screen and (max-width:876px) {
     .cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
+        margin: 15px;
+    }
+    .card_title {
+        font-size: 25px;
+    }
+    .card-section {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:888px) {
+    .content {
+        width: 80%;
+    }
+    .img-section {
+        display: none;
+    }
+    .card-img img {
+        width: 155px;
     }
 }
