@@ -1,2 +1,2 @@
-# website-structure
-A general template structure that should be followed by all simple js, html, css based websites
+# hackCBS 5.0
+Live website url - https://ayushgupta0110.github.io/hackCBS5.0/
