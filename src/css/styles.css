@@ -113,10 +113,10 @@
 
 .section {
     width: 100%;
-    height: 130vh;
-    /* position: sticky; */
+    /* height: 130vh; */
+    display: inline-block;
     margin-top: 35px;
-    margin-bottom: 42px;
+    margin-bottom: 62px;
 }
 
 #About-heading>h2 {
@@ -129,12 +129,11 @@
 }
 
 .article {
+    position: absolute;
     width: 80%;
-    display: block;
-    /* margin: -29px 0px 0px; */
+    /* display: inline-block; */
     padding: 29px 0px;
-    margin-left: 189px;
-    /* height: 79vh; */
+    margin-left: 80px;
 }
 
 .container .title {
@@ -151,8 +150,12 @@
 .content {
     float: left;
     width: 50%;
-    padding-right: 20px;
-    padding-top: 40px;
+    padding: 40px;
+    /* padding-left: 70px; */
+    padding-right: 70px;
+    height: 475px;
+    margin-bottom: 70px;
+    position: relative;
 }
 
 .para1 .para2 .para3 {
@@ -167,17 +170,13 @@
 .img-section img {
     width: 100%;
     /* height: auto; */
-    height: 100vh;
+    height: 90vh;
 }
 
 .content .article p {
-    font-size: 23px;
+    font-size: 24px;
     line-height: 1.5;
     margin-bottom: 21px;
-}
-
-.abc {
-    /* width: 30%; */
 }
 
 .sq-1 {
@@ -193,17 +192,21 @@
 
 /************************ cards ****************************/
 
-
-/* .card-heading {} */
+.card-heading {
+    /* position: absolute; */
+    margin: 10px 10px 10px;
+}
 
 .cards {
-    margin: 80px;
+    /* margin: 80px; */
+    position: static;
+    padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-columns: repeat(auto-fit, 1fr); */
     justify-content: center;
     grid-gap: 30px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .card {
@@ -463,13 +466,14 @@
     text-decoration: none;
 }
 
+
 /** ***************** FAQs ****************** */
 
 .faqs-section {
     padding-top: 60px;
 }
 
-.faq-container{
+.faq-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -477,19 +481,21 @@
     padding-top: 20px;
 }
 
-.faqs-section-heading > h2 {
+.faqs-section-heading>h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
 }
 
-.hr-line{
+.hr-line {
     width: 70%;
     margin: auto;
     margin-left: 11vw;
-    
 }
+
+
 /* Style the buttons that are used to open and close the faq-dropdown body */
+
 .faq-dropdown {
     /* background-color: #eee; */
     color: #444;
@@ -503,27 +509,36 @@
     margin-left: 11vw;
     font-size: 18px;
 }
-.faq-dropdown-answer{
+
+.faq-dropdown-answer {
     margin: auto;
     margin-left: 11vw;
-    width: 70%; 
+    width: 70%;
     padding: auto;
 }
+
 .faq-dropdown-answer p {
     font-size: 16px;
 }
+
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active,
 .faq-dropdown:hover {
     background-color: #F9F9F9;
 }
+
+
 /* Style the faq-dropdown panel. Note: hidden by default */
+
 .faq-dropdown-answer {
     padding: 10px 20px 0;
     background-color: white;
     display: none;
     overflow: hidden;
 }
+
 .faq-dropdown:after {
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
@@ -533,8 +548,44 @@
     margin-left: 5px;
     padding-top: 4px;
 }
+
 .active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
-    
+
+@media screen and (max-width:1441px) {
+    .content .article p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1341px) {
+    .content .article p {
+        font-size: 20px;
+    }
+    .cards {
+        position: static;
+        padding-top: 40px;
+        grid-gap: 0px;
+    }
+}
+
+@media screen and (max-width:1227px) {
+    .article {
+        width: 95%;
+    }
+    .img-section {
+        width: 42%;
+    }
+    .img-section img {
+        height: 74vh;
+    }
+}
+
+@media screen and(max-width:1147px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+}
