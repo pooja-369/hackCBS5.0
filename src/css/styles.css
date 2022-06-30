@@ -383,7 +383,7 @@
 
 .workshop-card {
     width: 27vw;
-    height: 72vh;
+    height: 40vw;
     border-radius: 20px;
     box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
     background: linear-gradient(159.8deg, #F8F5FF 0%, #d6c6f8 88.57%);
@@ -399,7 +399,7 @@
     font-style: normal;
     font-weight: 550;
     font-size: 1.2vw;
-    line-height: 4vh;
+    line-height: 2vw;
     margin-bottom: 0;
     color: #1F2631;
 }
@@ -409,7 +409,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 0.9vw;
-    line-height: 4vh;
+    line-height: 2vw;
     margin-bottom: 20px;
     color: #5F5B65;
 }
@@ -438,7 +438,7 @@
 }
 
 #workshop-card-img img {
-    height: 25vh;
+    height: 15vw;
     width: 25vw;
 }
 
@@ -617,26 +617,9 @@
 }
 
 @media screen and (max-width:768px) {
-    .workshop-card{
-        height: 60vh;
-    }
 
     #workshop-card-text>h6{
         margin-bottom:0;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .workshop-card{
-        padding-top: 15px;
-        width: 37vw;
-    }
-
-    #workshop-card-img img {
-        width: 34vw;
-    }
-    .workshop-card-container{
-        grid-template-columns: auto auto;
     }
 }
 
@@ -650,4 +633,23 @@
     .card-img img {
         width: 155px;
     }
+}
+
+@media screen and (max-width:600px) {
+    .workshop-card{
+        padding-top: 15px;
+        width: 37vw;
+        height: 50vw;
+    }
+    #workshop-card-img img {
+        width: 34vw;
+    }
+    .workshop-card-container{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .workshop-card{
+        height: 60vw;
 }
