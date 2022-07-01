@@ -383,7 +383,7 @@
 
 .workshop-card {
     width: 27vw;
-    height: 72vh;
+    height: 40vw;
     border-radius: 20px;
     box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
     background: linear-gradient(159.8deg, #F8F5FF 0%, #d6c6f8 88.57%);
@@ -397,9 +397,9 @@
 #workshop-card-title>h3 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 30px;
+    font-weight: 550;
+    font-size: 1.2vw;
+    line-height: 2vw;
     margin-bottom: 0;
     color: #1F2631;
 }
@@ -408,8 +408,8 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 0.9vw;
+    line-height: 2vw;
     margin-bottom: 20px;
     color: #5F5B65;
 }
@@ -421,15 +421,15 @@
 #workshop-timing {
     display: flex;
     flex-direction: column;
-    margin-left: -65%;
+    margin-left: -59%;
 }
 
 #workshop-timing span {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 1vw;
+    line-height: 4vh;
     color: #5F5B65;
 }
 
@@ -438,7 +438,7 @@
 }
 
 #workshop-card-img img {
-    height: 25vh;
+    height: 15vw;
     width: 25vw;
 }
 
@@ -457,7 +457,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.4vw;
     color: #F3EDFF;
 }
 
@@ -616,6 +616,12 @@
     }
 }
 
+@media screen and (max-width:768px) {
+    #workshop-card-text>h6 {
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width:888px) {
     .content {
         width: 80%;
@@ -625,5 +631,48 @@
     }
     .card-img img {
         width: 155px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .card_title {
+        font-size: 19px;
+    }
+    .card-img img {
+        width: 133px;
+        margin-left: 13%;
+        height: 128px;
+    }
+    #About-heading>h2 {
+        font-size: 40px;
+    }
+    .content {
+        padding: 0px;
+        position: inherit;
+    }
+    .content .article p {
+        font-size: 16px;
+        padding-right: 10px;
+        margin-right: 66px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .workshop-card {
+        padding-top: 15px;
+        width: 37vw;
+        height: 50vw;
+    }
+    #workshop-card-img img {
+        width: 34vw;
+    }
+    .workshop-card-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .workshop-card {
+        height: 60vw;
     }
 }
