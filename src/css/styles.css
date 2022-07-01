@@ -627,3 +627,26 @@
         width: 155px;
     }
 }
+
+@media screen and (max-width:640px) {
+    .card_title {
+        font-size: 19px;
+    }
+    .card-img img {
+        width: 133px;
+        margin-left: 13%;
+        height: 128px;
+    }
+    #About-heading>h2 {
+        font-size: 40px;
+    }
+    .content {
+        padding: 0px;
+        position: inherit;
+    }
+    .content .article p {
+        font-size: 16px;
+        padding-right: 10px;
+        margin-right: 66px;
+    }
+}
