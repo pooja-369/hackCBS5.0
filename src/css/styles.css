@@ -187,7 +187,8 @@
 }
 
 .second .sq {
-    background: blue;
+    background: rgb(175, 103, 226);
+    border-radius: 25%;
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
@@ -219,10 +220,8 @@
     padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: repeat(auto-fit, 1fr); */
     justify-content: center;
     /* grid-gap: 30px; */
-    /* align-items: center; */
 }
 
 .card {
@@ -239,15 +238,14 @@
 }
 
 .card-img {
-    margin: 49px 50px 50px 141px;
+    text-align: center;
 }
 
 .card-img img {
     object-fit: cover;
     border-radius: 50%;
-    /* margin-top: 50px; */
-    /* margin-bottom: 20px; */
-    /* margin-left: 23%; */
+    margin-top: 50px;
+    margin-bottom: 20px;
     width: 190px;
     height: 190px;
 }
@@ -484,6 +482,58 @@
 #workshop-card-button:hover {
     background-color: #ee3192;
     text-decoration: none;
+}
+
+
+/****************************prizes*************** */
+
+.prize {
+    width: 90%;
+    height: 75%;
+    background-color: rgba(248, 245, 255, 1);
+    border-radius: 20px;
+    margin-top: 35px;
+    margin-bottom: 140px;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
+}
+
+.prize:hover {
+    box-shadow: 2px 2px 20px black;
+}
+
+.prize-img img {
+    border: 18px solid rgb(249, 139, 225);
+    object-fit: fill;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: 35px;
+    width: 170px;
+    height: 170px;
+}
+
+.prize-info {
+    /* text-align: center; */
+    /* padding: 4px; */
+    margin-left: 40px;
+    font-size: large;
+}
+
+.prize-info img {
+    width: 30%;
+}
+
+.prize_title {
+    margin-bottom: 8px;
+}
+
+.prize-info button {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid white;
+    background: rgb(241, 46, 199);
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
 }
 
 
